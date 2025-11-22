@@ -15,10 +15,29 @@ nohup python -m torch.distributed.launch \
              --lr_backbone 2e-5 \
              --epochs 50 \
              --lr_drop 40  \
-             --coco_path ../../datasets/coco \
+             --coco_path ../datasets/coco \
              --backbone resnet18 \
              --num_workers 16 \
              --aux_refpoints \
              --random_refpoints 300 \
              --experiment_name $exp_name \
              > $logname 2>&1 &
+
+python -m torch.distributed.launch \
+     --nproc_per_node=1 \
+     --use_env \
+     kd_main.py \
+     -m dab_detr \
+     --find_unused_params \
+     --output_dir logs/debug_run \
+     --batch_size 16 \
+     --lr 2e-4 \
+     --lr_backbone 2e-5 \
+     --epochs 50 \
+     --lr_drop 40 \
+     --coco_path data/coco2017 \
+     --backbone resnet18 \
+     --num_workers 16 \
+     --aux_refpoints \
+     --random_refpoints 300 \
+     --experiment_name debug_run
