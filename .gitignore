@@ -1,0 +1,163 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+pip-wheel-metadata/
+wheelhouse/
+
+# Virtual environments
+venv/
+env/
+.venv/
+.virtualenv/
+ENV/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.pytest_cache/
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+*.manifest
+*.spec
+
+# Jupyter notebooks
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Logs and temp files
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# PyCharm
+/.idea/
+*.iml
+
+# VS Code settings (keep workspace settings out of git)
+.vscode/
+
+# Python virtual envs in project root
+env/
+venv/
+.venv/
+
+# Compiled objects
+*.o
+*.a
+*.so
+
+# Machine learning / deep learning artifacts (models, checkpoints, outputs)
+# - 忽略本地训练产生的大模型与检查点
+checkpoints/
+checkpoints_*/
+*.ckpt
+*.pth
+*.pt
+*.h5
+*.onnx
+/snapshots/
+/weights/
+/outputs/
+/models/
+trained_models/
+pretrained/
+# 如果你希望跟踪小的示例权重，可在 `.gitignore` 中取消对应行注释。
+
+# Dataset and preprocessing outputs (通常不要把数据放到 Git)
+data/
+dataset/
+datasets/
+data_processed/
+*.tfrecord
+*.lmdb
+
+# TensorBoard / visualization
+runs/
+tb_logs/
+tensorboard/
+events.out.tfevents.*
+
+# Hugging Face cache (通常位于用户主目录，而不是仓库内)
+# 如果你在仓库里有 hf cache 目录，忽略它：
+.cache/
+transformers_cache/
+huggingface/
+
+# Env files / secrets
+.env
+.env.* 
+secrets.json
+*.key
+*.pem
+
+# Misc
+*.csv
+*.tsv
+*.hdf5
+*.zip
+*.tar
+*.gz
+
+# Git LFS placeholders are safe; do not ignore .gitattributes
